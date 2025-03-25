@@ -16,3 +16,6 @@ st.write(
 st.write(
     "W in the chat, for United Kingdom."
 )
+st.write(
+    "<i>W in the chat, for United Kingdom.</i>"
+)
