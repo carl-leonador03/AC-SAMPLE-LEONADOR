@@ -16,6 +16,12 @@ st.write(
 st.write(
     "W in the chat, for United Kingdom."
 )
-st.write(
-    "<i>W in the chat, for United Kingdom.</i>"
+st.html(
+    "<i>- Winston Churchill</i>"
 )
+st.divider()
+button = st.button("Send W in chat")
+
+if button:
+    print("W")
+    
