@@ -1,27 +1,14 @@
 import streamlit as st
 
-st.title("🎈 My new app")
+st.title("your stove was left running")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "yeah check your stove. gas leak"
 )
-st.write(
-    "Once again, Germany took a huge L on this war."
-)
-st.write(
-    "Adolf thought fr fr 💀"
-)
-st.write(
-    "However, bro got cooked by British Forces."
-)
-st.write(
-    "W in the chat, for United Kingdom."
-)
-st.html(
-    "<i>- Winston Churchill</i>"
-)
-st.divider()
-button = st.button("Send W in chat")
 
-if button:
-    print("W")
-    
+tab1, tab2, tab3 = st.tabs(["Details", "Related", "Files"])
+
+tab1.write("a landmine was secretly installed at an undisclosed area within your home :)")
+
+tab2.write("something something literally 1984 something")
+
+tab3.write("sorry i ate them :(")
