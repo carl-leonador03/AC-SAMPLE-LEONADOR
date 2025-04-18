@@ -1,0 +1,7 @@
+[theme]
+base="dark"
+primaryColor="#1041ec"
+
+[server]
+runOnSave=true
+enableStaticServing=true

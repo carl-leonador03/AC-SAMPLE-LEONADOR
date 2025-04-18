@@ -1,14 +1,25 @@
 import streamlit as st
 
-st.title("your stove was left running")
-st.write(
-    "yeah check your stove. gas leak"
+st.set_page_config(
+    page_title = "Applied Cryptography",
+    page_icon = ":material/code_blocks:",
+    layout = "wide"
 )
 
-tab1, tab2, tab3 = st.tabs(["Details", "Related", "Files"])
+pages = {
+    "": [
+        st.Page("home.py", title = "Home", icon = ":material/home:")
+    ]
+    ,
+    "My projects": [
+        st.Page("projects/caesar_page.py", title = "Caesar Cipher"),
+        st.Page("projects/vigenere_page.py", title = "Vigenére Cipher"),
+        st.Page("projects/block_page.py", title = "Block Cipher"),
+        st.Page("projects/rsa_page.py", title = "RSA Algorithm"),
+    ]
+}
 
-tab1.write("a landmine was secretly installed at an undisclosed area within your home :)")
+pg = st.navigation(pages)
+st.logo("https://avatars.githubusercontent.com/u/178447516")
 
-tab2.write("something something literally 1984 something")
-
-tab3.write("sorry i ate them :(")
+pg.run()

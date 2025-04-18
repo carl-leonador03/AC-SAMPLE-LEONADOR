@@ -1,0 +1,22 @@
+[data-testid="stMainBlockContainer"] {
+    background-image: url("app/static/the-wall.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div:has(> [data-testid="stHeading"]) {
+    /** This is the header parent div :) */
+    padding-bottom: 5%;
+    filter: drop-shadow(0 0 20px #000000);
+}
+
+div:has(> [data-testid="stMarkdown"]) {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 1rem;
+    padding: 20px;
+    filter: drop-shadow(0 0 20px #000);
+}
+
+div.spacer {
+    height: 10%;
+}
